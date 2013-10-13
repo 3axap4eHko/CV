@@ -1,0 +1,24 @@
+/**
+@url http://www.justbenicestudio.com/studio/websymbols/
+*/
+@font-face{
+    font-family: 'WebSymbolsLigaRegular';
+    src: url('../fonts/WebSymbolsLiga-Regular.eot');
+    src: url('../fonts/WebSymbolsLiga-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/WebSymbolsLiga-Regular.woff') format('woff'),
+    url('../fonts/WebSymbolsLiga-Regular.ttf') format('truetype'),
+    url('../fonts/WebSymbolsLiga-Regular.svg#WebSymbolsRegular') format('svg');
+}
+
+.glyphicon-liga{
+    position:relative;
+    top:1px;
+    display:inline-block;
+    font-family: 'WebSymbolsLigaRegular';
+    font-style:normal;
+    font-weight:normal;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+}
+
+.skype:before{content:"\ef";}
