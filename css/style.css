@@ -168,6 +168,14 @@ article p {
     font-size: 1.8em;
 }
 
+.skills ul li {
+
+}
+
+.skills ul li .label {
+    width: 150px;
+}
+
 .date {
     color: #fff;
     background-color: #269abc;
