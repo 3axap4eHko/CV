@@ -206,3 +206,7 @@ ul.responsibility li:before {
     margin: 10px 0 10px 0;
     text-align: center;
 }
+
+.break-page {
+    page-break-before: always;
+}
