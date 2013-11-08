@@ -7,6 +7,10 @@ body {
     background: #b9babe url("img/bg.png") repeat;
 }
 
+.glyphicon-liga, .glyphicon {
+    margin: 0 5px 0 5px;
+}
+
 .container {
     background-color: #fff;
     max-width: 940px;
@@ -148,11 +152,6 @@ article {
 ul.socials, ul.socials li {
     list-style: none;
     display: inline-block;
-}
-
-
-.glyphicon-liga, .glyphicon {
-    margin: 0 5px 0 5px;
 }
 
 ul.contacts, ul.contacts li {
