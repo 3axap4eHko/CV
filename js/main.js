@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    Cufon.replace('h1, h2, h3, li, p, .cufon-text');
-
     $('.print-vc').click(function(){
         window.print();
     });

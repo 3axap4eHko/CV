@@ -1,3 +1,7 @@
+<?php
+ob_start();
+ini_set('display_errors',1);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,6 +88,84 @@
                 </div>
             </article>
         </section>
+<?php
+$nowYear = date('Y');
+
+$skills = [
+    'OS' => [
+        'Windows 98/XP/7/8' => 1996,
+        'Linux (CentOS, Debian, Ubuntu)' => 2006,
+    ],
+    'Web servers' => [
+        'Apache 2+' => 2006,
+        'Ngnix' => 2011,
+        'NodeJS' => 2011,
+        'PHP Build-in' => 2011,
+    ],
+    'Databases \ Storage \ Cache systems' => [
+        'MySQL 5+' => 2006,
+        'MongoDB' => 2011,
+        'SQLite' => 2012,
+        'Memcache' => 2010,
+        'APC' => 2011
+    ],
+    'Programming Languages' => [
+        'PHP 5+' => 2006,
+        'JavaScript (ECMAScript 3)' => 1996,
+        'JavaScript (ECMAScript 5)' => 2011,
+        'Bash script' => 2008,
+        'C#(.NET/Mono)' => 2011,
+        'Python 3' => 2013,
+        'Zephir' => 2013
+    ],
+    'Frameworks' => [
+        'Zend Framework' => 2006,
+        'Zend Framework 2' => 2011,
+        'Phalcon' => 2013,
+        'Symfony 2' => 2012,
+        'Doctrine 2 ORM/ODM' => 2012,
+        'Twitter Bootstrap' => 2012,
+        'JQuery (JQuery UI, JQuery Mobile)' => 2012,
+        'ExtJS 4' => 2011,
+        'AngularJS' => 2012,
+        'Unity 3D' => 2013
+    ],
+    'Design' => [
+        'HTML' => 1996,
+        'HTML5' => 2011,
+        'CSS' => 1996,
+        'CSS3' => 2011,
+        'Photoshop' => 2006,
+        '3ds Studio Max' => 2012,
+        'Corel Draw' => 2006
+    ],
+    'System Version Control' => [
+        'Git' => 2008,
+        'Mercurial' => 2011,
+        'SVN' => 2006
+    ],
+    'Unit testing' => [
+        'PHPUnit' => 2008,
+        'Jasmin' => 2012,
+        'Karma' => 2013,
+        'NUnit' => 2013
+    ],
+    'Code profiling \ Debugging' => [
+        'XDebug' => 2008,
+        'XHprof' => 2011
+    ],
+    'Continuous Integration' => [
+        'Jenkins / Hudson' => 2011,
+        'Travis' => 2013
+    ],
+    'Other skills' => [
+        'RESTful API' => 2010,
+        'JSON-RPC/XML-RPC' => 2012,
+        'OAuth / OAuth2' => 2011,
+        'Google Chrome Extension API' => 2011
+    ]
+];
+?>
         <section class="row break-page" id="skills">
             <aside class="col-lg-3">
                 <h2>Skills</h2>
@@ -93,190 +175,17 @@
                 <div class="skills col-lg-12">
                     <p>I love to learn new technologies and use them in my projects.</p>
                     <div class="row-fluid">
-                                            <h3>OS</h3>
+                    <?php foreach($skills as $title => $items):?>
+                        <h3><?php echo $title ?></h3>
                         <ul>
-                                                            <li>
-                                    Windows 98/XP/7/8<span class="label label-primary pull-right">18 years</span>
+                            <?php foreach($items as $item => $year): ?>
+                                <li>
+                                    <?php echo $item ?><span class="label label-primary pull-right"><?php echo ($nowYear-$year) ?> years</span>
                                 </li>
-                                                            <li>
-                                    Linux (CentOS, Debian, Ubuntu)<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Web servers</h3>
-                        <ul>
-                                                            <li>
-                                    Apache 2+<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                            <li>
-                                    Ngnix<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    NodeJS<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    PHP Build-in<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Databases \ Storage \ Cache systems</h3>
-                        <ul>
-                                                            <li>
-                                    MySQL 5+<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                            <li>
-                                    MongoDB<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    SQLite<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    Memcache<span class="label label-primary pull-right">4 years</span>
-                                </li>
-                                                            <li>
-                                    APC<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Programming Languages</h3>
-                        <ul>
-                                                            <li>
-                                    PHP 5+<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                            <li>
-                                    JavaScript (ECMAScript 3)<span class="label label-primary pull-right">18 years</span>
-                                </li>
-                                                            <li>
-                                    JavaScript (ECMAScript 5)<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    Bash script<span class="label label-primary pull-right">6 years</span>
-                                </li>
-                                                            <li>
-                                    C#(.NET/Mono)<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    Python 3<span class="label label-primary pull-right">1 years</span>
-                                </li>
-                                                            <li>
-                                    Zephir<span class="label label-primary pull-right">1 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Frameworks</h3>
-                        <ul>
-                                                            <li>
-                                    Zend Framework<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                            <li>
-                                    Zend Framework 2<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    Phalcon<span class="label label-primary pull-right">1 years</span>
-                                </li>
-                                                            <li>
-                                    Symfony 2<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    Doctrine 2 ORM/ODM<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    Twitter Bootstrap<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    JQuery (JQuery UI, JQuery Mobile)<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    ExtJS 4<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    AngularJS<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    Unity 3D<span class="label label-primary pull-right">1 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Design</h3>
-                        <ul>
-                                                            <li>
-                                    HTML<span class="label label-primary pull-right">18 years</span>
-                                </li>
-                                                            <li>
-                                    HTML5<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    CSS<span class="label label-primary pull-right">18 years</span>
-                                </li>
-                                                            <li>
-                                    CSS3<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    Photoshop<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                            <li>
-                                    3ds Studio Max<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    Corel Draw<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>System Version Control</h3>
-                        <ul>
-                                                            <li>
-                                    Git<span class="label label-primary pull-right">6 years</span>
-                                </li>
-                                                            <li>
-                                    Mercurial<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    SVN<span class="label label-primary pull-right">8 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Unit testing</h3>
-                        <ul>
-                                                            <li>
-                                    PHPUnit<span class="label label-primary pull-right">6 years</span>
-                                </li>
-                                                            <li>
-                                    Jasmin<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    Karma<span class="label label-primary pull-right">1 years</span>
-                                </li>
-                                                            <li>
-                                    NUnit<span class="label label-primary pull-right">1 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Code profiling \ Debugging</h3>
-                        <ul>
-                                                            <li>
-                                    XDebug<span class="label label-primary pull-right">6 years</span>
-                                </li>
-                                                            <li>
-                                    XHprof<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Continuous Integration</h3>
-                        <ul>
-                                                            <li>
-                                    Jenkins / Hudson<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    Travis<span class="label label-primary pull-right">1 years</span>
-                                </li>
-                                                    </ul>
-                                            <h3>Other skills</h3>
-                        <ul>
-                                                            <li>
-                                    RESTful API<span class="label label-primary pull-right">4 years</span>
-                                </li>
-                                                            <li>
-                                    JSON-RPC/XML-RPC<span class="label label-primary pull-right">2 years</span>
-                                </li>
-                                                            <li>
-                                    OAuth / OAuth2<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                            <li>
-                                    Google Chrome Extension API<span class="label label-primary pull-right">3 years</span>
-                                </li>
-                                                    </ul>
-                                        </div>
+                            <?php endforeach ?>
+                        </ul>
+                    <?php endforeach ?>
+                    </div>
             </article>
         </section>
 
@@ -521,3 +430,4 @@
 </script>
 </body>
 </html>
+<?php file_put_contents(__DIR__ . '/index.html', ob_get_clean());
