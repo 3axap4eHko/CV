@@ -79,7 +79,8 @@ ini_set('display_errors',1);
                         <li><a href="http://habrahabr.ru/users/3axap4ehko" target="_my_github"><img src="img/icons/habrahabr.png" alt="Habrahabr"/></a></li>
                     </ul>
                     <ul class="contacts">
-                        <li><span class="glyphicon glyphicon-phone"></span></i><a href="tel:+375292439867">+375 29 243 98 67</a></li>
+                        <li><span class="glyphicon glyphicon-gift"></span><a>29 January 1986</a></li>
+                        <li><span class="glyphicon glyphicon-phone"></span><a href="tel:+375292439867">+375 29 243 98 67</a></li>
                         <li><span class="glyphicon-liga skype"></span><a href="skype:battlebit">battlebit</a></li>
                         <li><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.com/maps/preview#!q=Minsk+Belarus" target="_blank">Belarus, Minsk</a></li>
                         <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:3axap4eHko@gmail.com">3axap4eHko@gmail.com</a></li>
@@ -176,16 +177,17 @@ $skills = [
                     <p>I love to learn new technologies and use them in my projects.</p>
                     <div class="row-fluid">
                     <?php foreach($skills as $title => $items):?>
-                        <h3><?php echo $title ?></h3>
+<h3><?php echo $title ?></h3>
                         <ul>
                             <?php foreach($items as $item => $year): ?>
-                                <li>
-                                    <?php echo $item ?><span class="label label-primary pull-right"><?php echo ($nowYear-$year) ?> years</span>
-                                </li>
+<li><?php echo $item ?><span class="label label-primary pull-right"><?php echo ($nowYear-$year) ?> years</span></li>
                             <?php endforeach ?>
+
                         </ul>
                     <?php endforeach ?>
+
                     </div>
+                </div>
             </article>
         </section>
 
@@ -317,12 +319,12 @@ $skills = [
                 <h5>The documents or seals <br/>certifying the authenticity<br/>of my skills</h5>
             </aside>
             <article class="col-lg-9">
-                <div class="col-sm-6 col-md-3">
+                <div class="col-xs-6 col-sm-3">
                     <a href="http://www.zend.com/en/yellow-pages#show-ClientCandidateID=ZEND022406" class="thumbnail">
                         <img src="img/zce-php5-3-logo.gif">
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-xs-6 col-sm-3">
                     <a href="certificates/HTML5_Game_Development.pdf" class="thumbnail">
                         <img src="img/udacity.png"><br>
                         HTML5 Game Development (8/1/13)
@@ -337,73 +339,73 @@ $skills = [
                 <h5>My works</h5>
             </aside>
             <article class="col-lg-9">
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://fcs.adform.com/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/fcs-adform-thmb.png">
                         Adform Flash to HTML5 system
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://vbb.adform.com/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/vbb-adform-thmb.png">
                         Adform Video Banner Builder
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="https://chrome.google.com/webstore/detail/owa-notifier/hldldpjjjagjfikfknadmnnmpbbhgihg" class="thumbnail">
                         <img src="img/portfolio/owa-thmb.png">
                         OWA Notifier
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://aton.ru/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/aton-thmb.png">
                         Aton.ru
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="https://www.quidcycle.com/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/quidcycle-thmb.png">
                         Quidcycle.com
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://keepit.com/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/keepit-thmb.png">
                         Keepit.com
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://www.youwell.ru/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/youwell-thmb.png">
                         YouWell.ru
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://yakupon.ru" class="thumbnail">
                         <img src="img/portfolio/yakupon-thmb.png">
                         Yakupon.RU
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://yami.ua" class="thumbnail">
                         <img src="img/portfolio/yami-thmb.png">
                         Yami.UA
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://qpon.ru" class="thumbnail" target="_blank">
                         <img src="img/portfolio/qpon-thmb.png">
                         Qpon.RU
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://freshsale.com.ua/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/fresh-sale-thmb.png">
                         Freshsale.com.ua
                     </a>
                 </div>
-                <div class="col-sm-8 col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="http://samkupon.ru/" class="thumbnail" target="_blank">
                         <img src="img/portfolio/samkupon-thmb.png">
                         Samkupon.ru
@@ -430,4 +432,4 @@ $skills = [
 </script>
 </body>
 </html>
-<?php file_put_contents(__DIR__ . '/index.html', ob_get_clean());
+<?php file_put_contents(__DIR__ . '/index.html', ob_get_contents());
