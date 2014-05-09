@@ -1,14 +1,24 @@
+@font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/arvo.eot'); /* IE 5-8 */
+    src: local('☺'),             /* sneakily trick IE */
+    url('../fonts/arvo.woff') format('woff'),    /* FF 3.6, Chrome 5, IE9 */
+    url('../fonts/Arvo-Regular.ttf') format('truetype'), /* Opera, Safari */
+    url('../fonts/arvo.svg#font') format('svg'); /* iOS */
+}
+
+h1 {
+    font-family: "Arvo", sans-serif
+
+}
+
 html {
     font-size: 16px;
 }
 body {
     font-size: 62.5%;
     color: #464646;
-    background: #b9babe url("img/bg.png") repeat;
-}
-
-.glyphicon-liga, .glyphicon {
-    margin: 0 5px 0 5px;
+    background: #b9babe url("/img/bg.png") repeat;
 }
 
 .container {
@@ -21,10 +31,6 @@ body {
     -webkit-box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.3);
     -moz-box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.3);
     box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.3);
-}
-
-@media (max-width: 1200px) {
-
 }
 
 .content-container {
@@ -74,7 +80,7 @@ header {
 
 header h1 {
     font: 6em 'Arvo', serif;
-    line-height: 0.66666666em;
+    line-height: 1em;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
@@ -152,6 +158,11 @@ article {
 ul.socials, ul.socials li {
     list-style: none;
     display: inline-block;
+}
+
+
+.glyphicon-liga, .glyphicon {
+    margin: 0 5px 0 5px;
 }
 
 ul.contacts, ul.contacts li {
