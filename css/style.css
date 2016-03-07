@@ -18,7 +18,7 @@ html {
 body {
     font-size: 62.5%;
     color: #464646;
-    background: #b9babe url("img/bg.png") repeat;
+    background: #b9babe url("../img/bg.png") repeat;
 }
 
 .container {
